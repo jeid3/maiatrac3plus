@@ -5,10 +5,14 @@
 // MAIATRAC3PLUS_API functions as being imported from a DLL, whereas this DLL sees symbols
 // defined with this macro as being exported.
 
+#ifdef _WIN32
 #ifdef MAIATRAC3PLUS_EXPORTS
 #define MAIATRAC3PLUS_API __declspec(dllexport)
 #else
 #define MAIATRAC3PLUS_API __declspec(dllimport)
+#endif
+#else
+#define MAIATRAC3PLUS_API
 #endif
 
 extern "C" {

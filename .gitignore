@@ -10,3 +10,5 @@ Release
 Debug
 x64
 *.suo
+libs
+obj

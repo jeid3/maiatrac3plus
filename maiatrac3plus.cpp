@@ -1,8 +1,11 @@
-// maiatrac3plus.cpp : Defines the exported functions for the DLL application.
-//
+#ifdef _WIN32
 
 #include "stdafx.h"
+
+#endif
+
 #include "maiatrac3plus.h"
+
 
 #include "include/MaiAT3PlusFrameDecoder.h"
 
