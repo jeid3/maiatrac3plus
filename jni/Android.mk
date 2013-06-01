@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := at3plusdecoder
-LOCAL_CFLAGS := -O2 -fsigned-char -ffast-math -Wall -Wno-multichar -Wno-psabi -Iinclude
+LOCAL_CFLAGS := -O3 -fsigned-char -ffast-math -Wall -Wno-multichar -Wno-psabi -Iinclude
 LOCAL_CPPFLAGS := -std=gnu++11 -frtti
 
 BASE := ..
